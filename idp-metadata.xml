@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://raw.githubusercontent.com/nomeaning-3336/qa-saml-idp/main/idp-metadata.xml">
+  <md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing"><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIICzzCCAbegAwIBAgIBAjANBgkqhkiG9w0BAQsFADAdMRswGQYDVQQDExJxYS1pZHAuZXhhbXBsZS5jb20wHhcNMjYxMDA4MTYyMjQyWhcNMjkwMTExMTYyMjQyWjAdMRswGQYDVQQDExJxYS1pZHAuZXhhbXBsZS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDIb3Xxr6j8YrI6a3IrwSJB5Ngc7o9NuHrEXsJdzSsCRMdg7icSRsfR/f9TR0b2ED5knTmqPg2dmNgg3EhGVU6I9D4OpZuclu4oGEfrgbR+h+xvrCYgTL02AvaIzEz9I8PdSqhT3GibPdumPIfjFJ+aTeQBxTX+SU1+Y96RROuz0b9Oceqg4X+cLvSlWJ0J4pYvJGskFgY9JrHnig12hlOq0noz6knQpP67wKADdjye6GTwhl9LzeVYhiPnC6AEUFn82KFZNoPJqZfQk0u0Ov/4oeDmwuz6aDF63jaQhDDKRc+XWlOePEbV2denj3L8YTWCj2sFfyTsbifG9DbgUs+5AgMBAAGjGjAYMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4IBAQBAgB7Jt2IV7hPItzitSOZNp9iF2CBXT3QBF/ySump0e2fKQ72mp5qfLbNlqEcAoUy711SlDO1jgbI7F7IbrS+H5UeLu4UQfh9ntBaq8lxLG/HBwZFVmjn0B84rbf0OncAI1t8xM3EWpkVd6DIUgQMQCss0n9xDu4ApesJ8btMGe3G9D1j7kcSTVKJ4Stau2hacXLzobo7UtGR7aflPnVKEABR90BdNjnJ7N4B/l12y2jfus5D1AW9gTDE8q08ndbV3dbmSKek6uJ771gtnLdZEMLhCJC+x66M+TIZeuQujsTps5LHHsZqXuKvbxjIQeLXbAPMHWO0/0WBbepTP9H98</ds:X509Certificate></ds:X509Data></ds:KeyInfo></md:KeyDescriptor>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://qa-idp.example.com/sso"/>
+  </md:IDPSSODescriptor>
+</md:EntityDescriptor>
